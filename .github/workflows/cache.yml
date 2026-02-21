@@ -1,4 +1,4 @@
-aname: Cache Dependencies
+name: Cache Dependencies
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
           key: cache-f72f708
 
       - name: prime-cache-f72f708
-        run: echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
+        run: echo "Cache hit result - ${{ steps.cache-step.outputs.cache-hit }}"
 
       - name: Install dependencies
         run: pip install fastapi

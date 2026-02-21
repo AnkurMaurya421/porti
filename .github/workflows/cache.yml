@@ -1,25 +1,25 @@
-name: Cache Dependencies
+name: Caching Dependencies
 
-on:
-  push:
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: prime-cache-f72f708
-        id: prime-cache-f72f708
+      - name: Cache Dependencies
+        id: cache-deps
         uses: actions/cache@v4
         with:
-          path: ~/.cache/pip
+          path: my-cache
           key: cache-f72f708
 
-      - name: Show cache result
-        run: echo "Cache hit: ${{ steps.prime-cache-f72f708.outputs.cache-hit }}"
+      - name: Generate Cache Content
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p my-cache
+          echo "dependencies cached" > my-cache/deps.txt
 
-      - name: Install dependencies
-        run: pip install fastapi
+      - name: prime-cache-f72f708
+        run: echo "Cache hit ${{ steps.cache-deps.outputs.cache-hit }}"

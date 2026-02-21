@@ -11,15 +11,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Cache pip dependencies
-        id: cache-step
+      - name: prime-cache-f72f708
+        id: prime-cache-f72f708
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: cache-f72f708
 
-      - name: prime-cache-f72f708
-        run: echo "Cache hit result - ${{ steps.cache-step.outputs.cache-hit }}"
+      - name: Show cache result
+        run: echo "Cache hit: ${{ steps.prime-cache-f72f708.outputs.cache-hit }}"
 
       - name: Install dependencies
         run: pip install fastapi

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "email": "21f2000153@ds.study.iitm.ac.in",
+    "version": "fc58d499"
+  },
+  "products": [
+    {"id": "prod-fc58d499-001", "name": "Standard Item 1", "category": "books", "price": 343.43, "stock": 17, "rating": 3.8},
+    {"id": "prod-fc58d499-002", "name": "Basic Item 2", "category": "home", "price": 401.3, "stock": 15, "rating": 3},
+    {"id": "prod-fc58d499-003", "name": "Basic Item 3", "category": "home", "price": 108.46, "stock": 116, "rating": 2.5},
+    {"id": "prod-fc58d499-004", "name": "Standard Item 4", "category": "sports", "price": 373.3, "stock": 76, "rating": 1},
+    {"id": "prod-fc58d499-005", "name": "Basic Item 5", "category": "electronics", "price": 217.31, "stock": 147, "rating": 3.9},
+    {"id": "prod-fc58d499-006", "name": "Basic Item 6", "category": "books", "price": 48.98, "stock": 72, "rating": 4.6},
+    {"id": "prod-fc58d499-007", "name": "Basic Item 7", "category": "books", "price": 497.43, "stock": 81, "rating": 3.2},
+    {"id": "prod-fc58d499-008", "name": "Elite Item 8", "category": "electronics", "price": 296.43, "stock": 88, "rating": 1.3},
+    {"id": "prod-fc58d499-009", "name": "Standard Item 9", "category": "clothing", "price": 315.2, "stock": 25, "rating": 2.2},
+    {"id": "prod-fc58d499-010", "name": "Elite Item 10", "category": "books", "price": 295.88, "stock": 0, "rating": 3.9},
+    {"id": "prod-fc58d499-011", "name": "Premium Item 11", "category": "home", "price": 274.86, "stock": 85, "rating": 2.2},
+    {"id": "prod-fc58d499-012", "name": "Standard Item 12", "category": "home", "price": 262.68, "stock": 51, "rating": 1.1},
+    {"id": "prod-fc58d499-013", "name": "Basic Item 13", "category": "books", "price": 160.02, "stock": 197, "rating": 2.3},
+    {"id": "prod-fc58d499-014", "name": "Basic Item 14", "category": "home", "price": 55.45, "stock": 196, "rating": 2.4},
+    {"id": "prod-fc58d499-015", "name": "Standard Item 15", "category": "sports", "price": 41.08, "stock": 51, "rating": 4.9},
+    {"id": "prod-fc58d499-016", "name": "Basic Item 16", "category": "electronics", "price": 373.2, "stock": 51, "rating": 2.1}
+  ],
+  "aggregations": {
+    "books": {"count": 5, "inventoryValue": 81180.64},
+    "home": {"count": 5, "inventoryValue": 66228.84},
+    "sports": {"count": 2, "inventoryValue": 30465.88},
+    "electronics": {"count": 3, "inventoryValue": 77063.61},
+    "clothing": {"count": 1, "inventoryValue": 7880.0}
+  }
+}

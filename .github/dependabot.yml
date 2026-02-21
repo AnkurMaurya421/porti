@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+```
+
+**README.md**
+```
+# My Python Project
+21f2000153@ds.study.iitm.ac.in
